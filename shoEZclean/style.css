@@ -1,0 +1,189 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #878787;
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  header {
+    background-color: #F0F0F0;
+    padding: 50px;
+    text-align: center;
+    color: rgb(68, 68, 68);
+    background-image: url('background.jpg');
+  }
+  
+  header h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  header p {
+    font-size: 24px;
+  }
+  
+  .content {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .page {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: #333333;
+  }
+  
+  #service {
+    background-color: #ffffff;
+  }
+  
+  .service-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .service-box .image-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .service-box .image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  .service-box .content {
+    flex-grow: 1;
+  }
+  
+  .service-box .content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .service-box .content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .service-box img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-box:hover img {
+    transform: scale(1.1);
+  }
+  
+  .bubble {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    padding: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .service-box:hover .bubble {
+    opacity: 1;
+  }
+  
+  .bubble h3 {
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: #FFFFFF;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .close {
+    color: #888;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+  .form-group button {
+    background-color: #4CAF50; /* Ubah dengan warna yang Anda inginkan */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-group button:hover {
+    background-color: #45a049; /* Ubah dengan warna yang Anda inginkan saat hover */
+  }
+  

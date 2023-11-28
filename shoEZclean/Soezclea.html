@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SoezClean</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#service">Our Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#location">Our Location</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <h1><span class="soez">Soez</span>Clean</h1>
+      <p>Get your cleaning solutions with us!</p>
+    </header>
+
+    <div class="content">
+      <section id="welcoming" class="page">
+        <h2>Welcome to SoezClean</h2>
+        <p>
+          We are proud to present a shoe washing service website that will bring
+          the best washing experience for your shoes. Here, craftsmanship and
+          dedication meet state-of-the-art technology, resulting in
+          extraordinary results for your beloved shoes.
+        </p>
+      </section>
+
+      <!-- Halaman Layanan Kami -->
+      <section id="service" class="page">
+        <h2>Our Services</h2>
+        <div class="service-box" onclick="openModal(1)">
+          <div class="bubble">
+            <h3>Konten 1</h3>
+          </div>
+          <img src="konten1.png" alt="Konten 1" />
+        </div>
+        <div class="service-box" onclick="openModal(2)">
+          <div class="bubble">
+            <h3>Konten 2</h3>
+          </div>
+          <img src="konten2.png" alt="Konten 2" />
+        </div>
+        <div class="service-box" onclick="openModal(3)">
+          <div class="bubble">
+            <h3>Konten 3</h3>
+          </div>
+          <img src="konten3.png" alt="Konten 3" />
+        </div>
+        <div class="service-box" onclick="openModal(4)">
+          <div class="bubble">
+            <h3>Konten 4</h3>
+          </div>
+          <img src="konten4.png" alt="Konten 4" />
+        </div>
+        <div class="service-box" onclick="openModal(5)">
+          <div class="bubble">
+            <h3>Konten 5</h3>
+          </div>
+          <img src="konten5.png" alt="Konten 5" />
+        </div>
+        <div class="service-box" onclick="openModal(6)">
+          <div class="bubble">
+            <h3>Konten 6</h3>
+          </div>
+          <img src="konten6.png" alt="Konten 6" />
+        </div>
+      </section>
+      <!-- Halaman Kontak Kami -->
+      <section id="contact" class="page">
+        <h2>Contact Us</h2>
+        <p>
+          Have any questions or want to book our services? Contact us using the
+          details below:
+        </p>
+        <ul class="contact-details">
+          <li><span class="icon">&#9742;</span> Phone: 085232899076</li>
+          <li><span class="icon">&#9993;</span> Email: soezclean@gmail.com</li>
+          <li><span class="icon">&#127968;</span> Address: Sukabirus, Bojongsoang</li>
+        </ul>
+      </section>
+
+      <!-- Halaman Tentang Kami -->
+      <section id="about" class="page">
+        <h2>About Us</h2>
+        <p>
+          We are a dedicated team of shoe lovers to care for your shoes with
+          love and expertise. With long experience in the shoe care industry, we
+          use the best washing techniques and trusted cleaning products to keep
+          your shoes clean, groomed and shiny. We prioritize customer
+          satisfaction and are committed to providing services that exceed
+          expectations. In addition, we care about the environment and use
+          eco-friendly products and water-saving washing techniques. Join us and
+          give your shoes the best care to maintain their beauty and quality in
+          every step you take.
+        </p>
+      </section>
+
+      <!-- Halaman Lokasi Kami -->
+      <section id="location" class="page">
+        <h2>Our Location</h2>
+        <p>
+          We are conveniently located in the heart of the city. Visit us at:
+        </p>
+        <div id="map"></div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7695.020561976195!2d107.63227931137088!3d-6.9797019965545335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sid!4v1686395069049!5m2!1sen!2sid"
+          width="100%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(1)">&times;</span>
+        <h2>Konten 1</h2>
+        <p>Deskripsi konten 1.</p>
+        <form>
+          <div class="form-group">
+            <label for="nama1">Nama:</label>
+            <input type="text" id="nama1" required />
+          </div>
+          <div class="form-group">
+            <label for="alamat1">Alamat:</label>
+            <input type="text" id="alamat1" required />
+          </div>
+          <div class="form-group">
+            <label for="nohp1">No. HP:</label>
+            <input type="text" id="nohp1" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Pesan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(2)">&times;</span>
+        <h2>Konten 2</h2>
+        <p>Deskripsi konten 2.</p>
+        <form>
+          <div class="form-group">
+            <label for="nama1">Nama:</label>
+            <input type="text" id="nama1" required />
+          </div>
+          <div class="form-group">
+            <label for="alamat1">Alamat:</label>
+            <input type="text" id="alamat1" required />
+          </div>
+          <div class="form-group">
+            <label for="nohp1">No. HP:</label>
+            <input type="text" id="nohp1" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Pesan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(3)">&times;</span>
+        <h2>Konten 3</h2>
+        <p>Deskripsi konten 3.</p>
+        <form>
+          <div class="form-group">
+            <label for="nama1">Nama:</label>
+            <input type="text" id="nama1" required />
+          </div>
+          <div class="form-group">
+            <label for="alamat1">Alamat:</label>
+            <input type="text" id="alamat1" required />
+          </div>
+          <div class="form-group">
+            <label for="nohp1">No. HP:</label>
+            <input type="text" id="nohp1" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Pesan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(4)">&times;</span>
+        <h2>Konten 4</h2>
+        <p>Deskripsi konten 4.</p>
+        <form>
+          <div class="form-group">
+            <label for="nama1">Nama:</label>
+            <input type="text" id="nama1" required />
+          </div>
+          <div class="form-group">
+            <label for="alamat1">Alamat:</label>
+            <input type="text" id="alamat1" required />
+          </div>
+          <div class="form-group">
+            <label for="nohp1">No. HP:</label>
+            <input type="text" id="nohp1" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Pesan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal5" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(5)">&times;</span>
+        <h2>Konten 5</h2>
+        <p>Deskripsi konten 5.</p>
+        <form>
+          <div class="form-group">
+            <label for="nama1">Nama:</label>
+            <input type="text" id="nama1" required />
+          </div>
+          <div class="form-group">
+            <label for="alamat1">Alamat:</label>
+            <input type="text" id="alamat1" required />
+          </div>
+          <div class="form-group">
+            <label for="nohp1">No. HP:</label>
+            <input type="text" id="nohp1" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Pesan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="modal6" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal(6)">&times;</span>
+        <h2>Konten 6</h2>
+        <p>Deskripsi konten 6.</p>
+        <form>
+          <div class="form-group">
+            <label for="nama1">Nama:</label>
+            <input type="text" id="nama1" required />
+          </div>
+          <div class="form-group">
+            <label for="alamat1">Alamat:</label>
+            <input type="text" id="alamat1" required />
+          </div>
+          <div class="form-group">
+            <label for="nohp1">No. HP:</label>
+            <input type="text" id="nohp1" required />
+          </div>
+          <div class="form-group">
+            <button type="submit">Pesan</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Tambahkan modal untuk konten 2, 3, 4, dan 5 dengan struktur yang sama -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
